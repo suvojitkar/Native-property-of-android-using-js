@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>About</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="date()">Date</button>
+  <button ion-button block (click)="barcode()">Barcode</button>
+  <button ion-button block (click)="photo()">camera</button>
+  <div *ngIf="base64Image">
+     Latest Img:
+     <img [src]="base64Image" />
+  </div>
+</ion-content>
